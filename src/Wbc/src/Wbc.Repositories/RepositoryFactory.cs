@@ -6,17 +6,27 @@ namespace Wbc.Repositories
 	{
 		public IUserRepository GetUserRepository()
 		{
-			return null;
+			return new UserRepository();
 		}
 
 		public IUserExtensionRepository GetUserExtensionRepository()
 		{
-			return null;
+			return new UserExtensionRepository();
 		}
 
 		public ICompanyRepository GetCompanyRepository()
 		{
-			return null;
+			return new CompanyRepository();
+		}
+
+		public IUserPhotoRepository GetUserPhotoRepository()
+		{
+			return new UserPhotoRepository();
+		}
+
+		public IPostRepository GetPostRepository()
+		{
+			return new PostRepository();
 		}
 
 	}
