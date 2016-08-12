@@ -14,7 +14,7 @@ namespace Wbc.ServiceHost
 				.UseIISIntegration()
 				.UseStartup<Startup>()
 				.Build();
-
+             
 			host.Run();
 		}
 	}

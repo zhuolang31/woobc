@@ -5,9 +5,14 @@
   "service": {
     "services": [
       {
-        "name": "ProductService",
-        "path": "/api/service/",
-        "type": "Wbc.ServiceHost.TestService, Wbc.ServiceHost"
+        "name": "UserService",
+        "path": "/api/user/",
+        "type": "Wbc.Services.Implementation.UserService, Wbc.Services"
+      },
+      {
+        "name": "CompanyService",
+        "path": "/api/company/",
+        "type": "Wbc.Services.Implementation.CompanyService, Wbc.Services"
       }
     ],
     "paths": [

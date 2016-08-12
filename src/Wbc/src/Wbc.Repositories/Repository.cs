@@ -21,12 +21,13 @@ namespace Wbc.Repositories
 		//    return exp2;
 		//});
 
-		public async Task AddAsync(TAggregateRoot aggregateRoot)
+		public async Task<TId> AddAsync(TAggregateRoot aggregateRoot)
 		{
 			using (var ctx = new WbcContext())
 			{
 				ctx.Set<TAggregateRoot>().Add(aggregateRoot);
 				await ctx.SaveChangesAsync();
+                return aggregateRoot.Id;
 			}
 		}
 

@@ -8,7 +8,7 @@ namespace Wbc.Domain.Repositories
 	public interface IRepository<TAggregateRoot, TId>
 		where TAggregateRoot : class, IAggregateRoot<TId>
 	{
-		Task AddAsync(TAggregateRoot aggregateRoot);
+		Task<TId> AddAsync(TAggregateRoot aggregateRoot);
 
 		Task AddRangeAsync(IEnumerable<TAggregateRoot> aggregateRoot);
 

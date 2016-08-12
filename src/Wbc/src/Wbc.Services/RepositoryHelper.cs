@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Wbc.Repositories;
 
 namespace Wbc.Services
 {
-    public class Class1
+    public class RepositoryHelper
     {
-        public Class1()
-        {
-        }
+        public static RepositoryFactory Repository = new RepositoryFactory();
     }
 }
