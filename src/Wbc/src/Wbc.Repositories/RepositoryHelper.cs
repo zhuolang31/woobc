@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Wbc.Repositories;
 
-namespace Wbc.Services
+namespace Wbc.Repositories
 {
     public class RepositoryHelper
     {

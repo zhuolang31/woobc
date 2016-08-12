@@ -28,7 +28,7 @@ CREATE TABLE `wbc_post` (
 		public long UserId { get; set; }
 
 		/// <summary>
-		/// 用户ID
+		/// 标题
 		/// </summary>
 		public string Title { get; set; }
 

@@ -49,6 +49,5 @@ namespace Wbc.Domain.Models
 		/// 最后更新时间
 		/// </summary>
 		public DateTime DateModified { get; set; }
-
-	}
+    }
 }

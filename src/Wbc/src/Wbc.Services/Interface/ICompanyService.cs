@@ -8,6 +8,6 @@ namespace Wbc.Services.Interface
 {
     interface ICompanyService
     {
-        Task<Company> GetCompany(long companyId);
+        Task<Company> GetCompanyAsync(long companyId);
     }
 }

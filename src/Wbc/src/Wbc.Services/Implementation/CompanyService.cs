@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Wbc.Domain.Models;
 using Wbc.Domain.Repositories;
+using Wbc.Repositories;
 using Wbc.Services.Interface;
 
 namespace Wbc.Services.Implementation
@@ -12,7 +13,7 @@ namespace Wbc.Services.Implementation
     {
         private ICompanyRepository _companyRepository = RepositoryHelper.Repository.GetCompanyRepository();
 
-        public Task<Company> GetCompany(long companyId)
+        public Task<Company> GetCompanyAsync(long companyId)
         {
             return _companyRepository.GetByIdAsync(companyId);
         }

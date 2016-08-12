@@ -5,5 +5,6 @@ namespace Wbc.Repositories
 {
 	public class UserPhotoRepository : Repository<UserPhoto, long>, IUserPhotoRepository
 	{
+
 	}
 }
