@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Wbc.Domain.Models;
 using Wbc.Domain.Repositories;
 using Wbc.Repositories;
-using Wbc.Services.Interface;
+using Wbc.Services.Contract;
 
 namespace Wbc.Services.Implementation
 {
-    public class CompanyService : ICompanyService
+	public class CompanyService : ICompanyService
     {
         private ICompanyRepository _companyRepository = RepositoryHelper.Repository.GetCompanyRepository();
 
